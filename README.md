@@ -44,7 +44,7 @@ EOM
 Install the chart:
 
 ```bash
-$ helm upgrade --install -f my-values.yaml my-release redash/redash
+$ helm upgrade --install -f my-values.yaml my-release redash/redash --set postgresql.volumePermissions.enabled=true
 ```
 
 The command deploys Redash on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section and and default [values.yaml](values.yaml) lists the parameters that can be configured during installation.
